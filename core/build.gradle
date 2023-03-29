@@ -1,0 +1,11 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+}
+
+group 'net.stonegomes.trial.core'
+version '1.0'
+
+dependencies {
+    compileOnly project(":common")
+    compileOnly 'fr.mrmicky:fastboard:1.2.1'
+}

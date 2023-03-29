@@ -1,0 +1,5 @@
+rootProject.name = 'dodgeball-minigame'
+include 'common'
+include 'core'
+include 'plugin'
+

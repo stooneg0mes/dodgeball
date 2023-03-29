@@ -1,0 +1,6 @@
+storage:
+  connection: "" # url
+  database: "test"
+
+victory-commands:
+  - "say %player% won the game!"
