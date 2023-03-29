@@ -32,6 +32,7 @@ import net.stonegomes.trial.plugin.game.player.DodgeballPlayerFactory;
 import net.stonegomes.trial.plugin.listener.GameListener;
 import net.stonegomes.trial.plugin.listener.ProcessListener;
 import net.stonegomes.trial.plugin.listener.TrafficListener;
+import net.stonegomes.trial.plugin.placeholder.DodgeballGamePlaceholder;
 import net.stonegomes.trial.plugin.process.DodgeballProcessCache;
 import net.stonegomes.trial.plugin.runnable.GameUpdateRunnable;
 import net.stonegomes.trial.plugin.scoreboard.DodgeballScoreboardCache;
@@ -97,10 +98,11 @@ public class DodgeballPlugin extends JavaPlugin {
         viewFrame.with(new GameMainView(gamePlayerCache, gameManager))
             .register();
 
-        // Commands & listeners
+        // Commands, listeners runnable and placeholder
         registerCommands();
         registerListeners();
         registerRunnable();
+        registerPlaceholder();
     }
 
     @Override
@@ -135,6 +137,13 @@ public class DodgeballPlugin extends JavaPlugin {
 
     private void registerRunnable() {
         new GameUpdateRunnable(gamePlayerCache, gameManager).runTaskTimerAsynchronously(this, 0L, 10L);
+    }
+
+    private void registerPlaceholder() {
+        final PluginManager pluginManager = Bukkit.getPluginManager();
+        if (pluginManager.getPlugin("PlaceholderAPI") == null) return;
+
+        new DodgeballGamePlaceholder(gamePlayerCache).register();
     }
 
     private boolean setupMongo() {

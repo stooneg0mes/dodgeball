@@ -3,3 +3,4 @@ name: DodgeballPlugin
 version: 1.0
 author: stonegomes_
 api-version: 1.13
+softdepend: [PlaceholderAPI]
