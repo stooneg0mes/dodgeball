@@ -1,7 +1,7 @@
 package net.stonegomes.trial.plugin.process.impl;
 
-import net.stonegomes.trial.common.location.cuboid.CuboidRegion;
-import net.stonegomes.trial.common.string.RandomString;
+import net.stonegomes.trial.core.region.CuboidRegion;
+import net.stonegomes.trial.plugin.util.string.RandomString;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.GameDao;
 import net.stonegomes.trial.core.GameFactory;

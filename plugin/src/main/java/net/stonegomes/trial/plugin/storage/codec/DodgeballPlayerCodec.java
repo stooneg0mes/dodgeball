@@ -1,4 +1,4 @@
-package net.stonegomes.trial.plugin.codec;
+package net.stonegomes.trial.plugin.storage.codec;
 
 import net.stonegomes.trial.plugin.DodgeballPlugin;
 import net.stonegomes.trial.plugin.game.player.DodgeballPlayer;

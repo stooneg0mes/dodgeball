@@ -1,7 +1,7 @@
 package net.stonegomes.trial.plugin.util.item;
 
 import com.google.common.collect.Lists;
-import net.stonegomes.trial.plugin.util.color.ColorUtil;
+import net.stonegomes.trial.plugin.util.ColorUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;

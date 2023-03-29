@@ -1,4 +1,4 @@
-package net.stonegomes.trial.common.storage;
+package net.stonegomes.trial.plugin.storage;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;

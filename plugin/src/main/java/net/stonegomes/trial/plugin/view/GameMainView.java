@@ -4,7 +4,7 @@ import me.saiintbrisson.minecraft.PaginatedView;
 import me.saiintbrisson.minecraft.PaginatedViewSlotContext;
 import me.saiintbrisson.minecraft.ViewContext;
 import me.saiintbrisson.minecraft.ViewItem;
-import net.stonegomes.trial.common.item.ItemBuilder;
+import net.stonegomes.trial.plugin.util.item.ItemBuilder;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.GameManager;
 import net.stonegomes.trial.core.player.GamePlayer;

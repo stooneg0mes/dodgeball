@@ -1,6 +1,6 @@
 package net.stonegomes.trial.core;
 
-import net.stonegomes.trial.common.location.cuboid.CuboidRegion;
+import net.stonegomes.trial.core.region.CuboidRegion;
 import net.stonegomes.trial.core.lobby.Lobby;
 import net.stonegomes.trial.core.player.GamePlayerMap;
 import net.stonegomes.trial.core.state.GameState;

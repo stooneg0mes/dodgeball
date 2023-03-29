@@ -1,9 +1,9 @@
 package net.stonegomes.trial.plugin.game.state.impl;
 
 import fr.mrmicky.fastboard.FastBoard;
-import net.stonegomes.trial.common.SyncTeleport;
-import net.stonegomes.trial.common.location.cuboid.CuboidRegion;
-import net.stonegomes.trial.common.time.TimeFormatter;
+import net.stonegomes.trial.plugin.util.SyncTeleport;
+import net.stonegomes.trial.core.region.CuboidRegion;
+import net.stonegomes.trial.plugin.util.time.TimeFormatter;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.player.GamePlayer;
 import net.stonegomes.trial.core.player.GamePlayerType;

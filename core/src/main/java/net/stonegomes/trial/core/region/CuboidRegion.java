@@ -1,4 +1,4 @@
-package net.stonegomes.trial.common.location.cuboid;
+package net.stonegomes.trial.core.region;
 
 import lombok.Data;
 import org.bukkit.Bukkit;

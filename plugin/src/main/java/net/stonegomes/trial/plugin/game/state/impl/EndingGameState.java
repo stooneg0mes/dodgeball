@@ -1,7 +1,7 @@
 package net.stonegomes.trial.plugin.game.state.impl;
 
 import fr.mrmicky.fastboard.FastBoard;
-import net.stonegomes.trial.common.time.TimeFormatter;
+import net.stonegomes.trial.plugin.util.time.TimeFormatter;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.GameManager;
 import net.stonegomes.trial.core.player.GamePlayer;

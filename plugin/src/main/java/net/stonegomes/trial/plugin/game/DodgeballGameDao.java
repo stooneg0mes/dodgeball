@@ -1,7 +1,7 @@
 package net.stonegomes.trial.plugin.game;
 
 import com.mongodb.client.MongoCollection;
-import net.stonegomes.trial.common.storage.MongoConnection;
+import net.stonegomes.trial.plugin.storage.MongoConnection;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.GameDao;
 import net.stonegomes.trial.core.GameMap;

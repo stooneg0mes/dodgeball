@@ -1,4 +1,4 @@
-package net.stonegomes.trial.common.location;
+package net.stonegomes.trial.plugin.util.serializer;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

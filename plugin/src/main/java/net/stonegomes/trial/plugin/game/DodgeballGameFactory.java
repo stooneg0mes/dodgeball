@@ -1,7 +1,7 @@
 package net.stonegomes.trial.plugin.game;
 
 import lombok.RequiredArgsConstructor;
-import net.stonegomes.trial.common.location.cuboid.CuboidRegion;
+import net.stonegomes.trial.core.region.CuboidRegion;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.GameFactory;
 import net.stonegomes.trial.core.lobby.Lobby;

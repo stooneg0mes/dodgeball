@@ -1,8 +1,8 @@
 package net.stonegomes.trial.plugin.game;
 
 import lombok.Getter;
-import net.stonegomes.trial.common.SyncGameMode;
-import net.stonegomes.trial.common.SyncTeleport;
+import net.stonegomes.trial.plugin.util.SyncGameMode;
+import net.stonegomes.trial.plugin.util.SyncTeleport;
 import net.stonegomes.trial.core.Game;
 import net.stonegomes.trial.core.GameManager;
 import net.stonegomes.trial.core.GameMap;

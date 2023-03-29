@@ -1,8 +1,7 @@
-package net.stonegomes.trial.plugin.codec;
+package net.stonegomes.trial.plugin.storage.codec;
 
-import net.stonegomes.trial.common.location.LocationSerializer;
-import net.stonegomes.trial.common.location.cuboid.CuboidRegion;
 import net.stonegomes.trial.core.lobby.Lobby;
+import net.stonegomes.trial.core.region.CuboidRegion;
 import net.stonegomes.trial.plugin.DodgeballPlugin;
 import net.stonegomes.trial.plugin.game.DodgeballGame;
 import net.stonegomes.trial.plugin.lobby.DodgeballLobby;
@@ -12,6 +11,7 @@ import org.bson.codecs.Codec;
 import org.bson.codecs.DecoderContext;
 import org.bson.codecs.EncoderContext;
 import org.bukkit.Location;
+import net.stonegomes.trial.plugin.util.serializer.LocationSerializer;
 
 import java.util.UUID;
 

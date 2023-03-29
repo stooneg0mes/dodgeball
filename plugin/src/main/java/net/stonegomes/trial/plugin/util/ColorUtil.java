@@ -1,4 +1,4 @@
-package net.stonegomes.trial.common.color;
+package net.stonegomes.trial.plugin.util;
 
 import net.md_5.bungee.api.ChatColor;
 

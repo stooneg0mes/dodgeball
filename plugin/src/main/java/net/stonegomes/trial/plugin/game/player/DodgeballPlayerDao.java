@@ -1,8 +1,8 @@
 package net.stonegomes.trial.plugin.game.player;
 
 import com.mongodb.client.MongoCollection;
-import net.stonegomes.trial.common.storage.MongoConnection;
-import net.stonegomes.trial.common.task.Task;
+import net.stonegomes.trial.plugin.storage.MongoConnection;
+import net.stonegomes.trial.plugin.util.task.Task;
 import net.stonegomes.trial.core.player.GamePlayerDao;
 import org.bson.conversions.Bson;
 
