@@ -3,9 +3,9 @@
 
 This is a simple Bukkit minigame plugin based on Dodgeball.
 
-The functionality of the game is not completely alike to Dodgeball, instead it works with a unlimited gun that throws balls and you should dodge it to prevent getting eliminated.
+The functionality of the game is not completely alike to Dodgeball, instead it works with an unlimited gun that throws balls and you should dodge it to prevent getting eliminated.
 
-The plugin allows you to create many game arenas on a single-server, making it able to have many players playing at the same time and same server.
+The plugin allows you to create many game arenas on a single server, making it able to have many players playing at the same time and same server.
 ## Modules
 
 [core](https://github.com/stooneg0mes/dodgeball-minigame/tree/master/core) - This module is the abstract part of the game in general.
