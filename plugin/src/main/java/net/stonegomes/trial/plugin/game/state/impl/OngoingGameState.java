@@ -147,25 +147,28 @@ public class OngoingGameState implements GameState {
     }
 
     @Override
-    public void onEntityHit(GameStateContext context, GamePlayer attacker, EntityDamageByEntityEvent event) {
-        final GamePlayer gamePlayer = context.getPlayer();
+    public void onEntityHit(GameStateContext context, GamePlayer attackerPlayer, EntityDamageByEntityEvent event) {
+        final GamePlayer victimPlayer = context.getPlayer();
         final Entity damagerEntity = event.getDamager();
 
+        final GameTeamType victimTeam = victimPlayer.getTeam();
+        final GameTeamType attackerTeam = attackerPlayer.getTeam();
+
         if (damagerEntity instanceof Snowball) {
-            if (gamePlayer.getTeam() == attacker.getTeam()) {
+            if (victimTeam == attackerTeam) {
                 event.setCancelled(true);
             }
 
-            gamePlayer.incrementDeaths();
-            attacker.incrementKills();
+            attackerPlayer.incrementKills();
+            attackerPlayer.toDatabase();
 
-            context.getManager().sendSpectatingPlayer(gamePlayer, context.getGame());
+            context.getManager().sendSpectatingPlayer(victimPlayer, context.getGame());
+            victimPlayer.incrementDeaths();
+            victimPlayer.toDatabase();
         }
 
-        if (damagerEntity instanceof Player) {
-            if (gamePlayer.getTeam() == attacker.getTeam()) {
-                event.setCancelled(true);
-            }
+        if ((damagerEntity instanceof Player) && (victimTeam == attackerTeam)) {
+            event.setCancelled(true);
         }
     }
 

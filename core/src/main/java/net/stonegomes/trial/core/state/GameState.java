@@ -132,10 +132,10 @@ public interface GameState {
      * Called when a player is damaged by another entity.
      *
      * @param context the game state context.
-     * @param attacker the player who attacked.
+     * @param attackerPlayer the player who attacked.
      * @param event the entity damage by entity event.
      */
-    default void onEntityHit(GameStateContext context, GamePlayer attacker, EntityDamageByEntityEvent event) {
+    default void onEntityHit(GameStateContext context, GamePlayer attackerPlayer, EntityDamageByEntityEvent event) {
     }
 
     /**

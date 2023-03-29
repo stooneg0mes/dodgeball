@@ -71,20 +71,20 @@ public class EndingGameState implements GameState {
         final List<String> victoryCommands = plugin.getConfig().getStringList("victory-commands");
         final GameTeamType winnerTeam = game.getWinnerTeam();
 
-        for (GamePlayer gamePlayer : game.getPlayers(winnerTeam)) {
-            final String playerName = gamePlayer.getName();
+        for (GamePlayer player : game.getPlayers(winnerTeam)) {
+            final String playerName = player.getName();
             for (String command : victoryCommands) {
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player%", playerName));
             }
 
-            gamePlayer.incrementWins();
-            ((DodgeballPlayer) gamePlayer).toDatabase();
+            player.incrementWins();
+            player.toDatabase();
         }
 
         final GameTeamType loserTeam = winnerTeam.getOpposite();
         for (GamePlayer player : game.getPlayers(loserTeam)) {
             player.incrementDefeats();
-            ((DodgeballPlayer) player).toDatabase();
+            player.toDatabase();
         }
 
         final GameManager gameManager = context.getManager();

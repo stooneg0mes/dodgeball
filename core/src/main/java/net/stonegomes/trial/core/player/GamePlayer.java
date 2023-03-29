@@ -270,4 +270,11 @@ public interface GamePlayer {
      */
     boolean isInSameTeam(GamePlayer gamePlayer);
 
+    /**
+     * Save the player to the database.
+     * This method is optional to be implemented and used.
+     */
+    default void toDatabase() {
+    }
+
 }

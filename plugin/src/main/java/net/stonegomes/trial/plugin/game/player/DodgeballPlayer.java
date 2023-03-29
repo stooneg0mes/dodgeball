@@ -252,6 +252,7 @@ public class DodgeballPlayer implements GamePlayer {
         return gamePlayer.getTeam() == team;
     }
 
+    @Override
     public void toDatabase() {
         plugin.getGamePlayerDao().replace(this);
     }
