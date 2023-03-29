@@ -15,13 +15,13 @@ The plugin allows you to create many game arenas on a single server, making it a
 
 This plugin supports [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)! These are the currently implemented placeholders:
 
-`%game_total_kills%`, `%game_monthly_kills%` and `%game_weekly_kills%`
+- `%game_total_kills%`, `%game_monthly_kills%` and `%game_weekly_kills%`
 
-`%game_total_deaths%`, `%game_monthly_deaths%` and `%game_weekly_deaths%`
+- `%game_total_deaths%`, `%game_monthly_deaths%` and `%game_weekly_deaths%`
 
-`%game_total_wins%`, `%game_monthly_wins%` and `%game_weekly_wins%`
+- `%game_total_wins%`, `%game_monthly_wins%` and `%game_weekly_wins%`
 
-`%game_total_defeats%`, `%game_monthly_defeats%` and `%game_weekly_defeats%`
+- `%game_total_defeats%`, `%game_monthly_defeats%` and `%game_weekly_defeats%`
 ## FAQ
 
 #### What is the logic when the player enters the game on early stage?
