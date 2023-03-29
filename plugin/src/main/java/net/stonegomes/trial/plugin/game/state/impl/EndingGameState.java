@@ -66,9 +66,9 @@ public class EndingGameState implements GameState {
 
     @Override
     public void onGameStop(GameStateContext context) {
-        final Game game = context.getGame();
-
         final List<String> victoryCommands = plugin.getConfig().getStringList("victory-commands");
+
+        final Game game = context.getGame();
         final GameTeamType winnerTeam = game.getWinnerTeam();
 
         for (GamePlayer player : game.getPlayers(winnerTeam)) {
